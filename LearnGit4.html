@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn_Git</title>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet1.css">
+    </head>
+    
+<body>
+<h1 id="main_heading">Learn Git</h1>
+    <section>
+        <h1>14. Branching Out</h1>
+        <p>When developer are working on a feature or bug they'll often create a copy (aka branch) of their code they can make separate commits to.</p>
+        <p>Then when they're done they can merge this branch back into their main master branch.</p>
+        <p>We want to remove some files from main branch or add some files into main branch so let's create a branch called clean_up.</p>
+        <p>Where we'll do all the work:-</p>
+        <code>git branch clean_up</code>
+
+    </section>
+    
+<section>
+    <h1>15. Switching Branches</h1>
+    <p>Let's type this command <code>git branch</code></p>
+    <p>You will find two branches one is main master &amp; other one is newly created clean_up branch.</p>
+    <p>Now we can switch branches using this command:-</p>
+    <code>git checkout clean_up</code>
+    <p>So now you are in clean_up branch.</p>
+        <h2>Some Important Things</h2>
+    <code>git checkout -b branch_name</code>
+    <p>To checkout &amp; create at the same time.</p>
+    <p>This is the same as doing:-</p>
+    <code>git branch branch_name</code>
+    And
+    <code>git checkout new_branch</code>
+  
+    </section>
+    
+    <section>
+        <h1>16. Remove Files</h1>
+        <code>git rm '*.txt'</code>
+        <p>It will remove all the txt files.</p>
+        <p><b>Remove all the things:-</b></p>
+        <p>Removing one file is great and all, but what if you want to remove an entire folder? You can use the recursive option on git rm:-</p>
+        <code>git rm -r folder_name</code>
+        <p>This will recursively remove all folders and files from the given directory.</p>
+        
+        <p>If you happen to delete a file without <code>git rm</code> you will find that you still have to git tm the deleted files from the working tree.</p>
+        <p>You can save this step by step using the <code>-a</code> option on <code>git commit</code></p>
+        <p>Which auto removes deleted files with the commit.</p>
+        <code>git commit -am "message"</code>
+ 
+
+    </section>
+        
+        <section>
+            <h1>17. Preparing to merge</h1>
+            <p>Are you ready to merge?</p>
+            <p>Okay! First come in the branch(In which do you want to change or merge).</p>
+            <p>Let's pretend you want to merge all the changes of clean_up branch to master branch.</p>
+            <p>Then first come on in master branch through this command:-</p>
+            <code>git checkout master</code>
+            <p>Now you are in master branch. Right?</p>
+            <p>Then take the data from other existing branch then do this:-</p>
+            <code>git merge clean_up</code>
+          
+        </section>
+    
+
+</body>
+</html>

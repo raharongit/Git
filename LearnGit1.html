@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn_Git</title>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet1.css">
+    </head>
+    
+<body>
+<h1 id="main_heading">Learn Git</h1>
+    <section>
+        <h1>1. To initialize a git repository</h1>
+        <p><strong>git init</strong><em> .git</em> directory is hidden here. It contains all sort of directories files inside it. We'll rarely ever need to do anything inside here but it's the guts of Git, where all the magic happens.</p>
+        <p>When we make a repo then it's always inside in .git</p>
+    </section>
+    
+    <section>
+    <h1>2. <code>git status</code></h1>
+        <p>What's changes happen in repo. We can say what's changes have been made by user in repo.</p>
+    </section>
+    
+    <section>
+        <h1>3. Remember these things</h1>
+            <p><strong>Staged:-</strong> Files are rady to be commited.</p>
+            <p><strong>Unstaged:-</strong>Files with changes that have not been prepared to be committed.</p>
+            <p><strong>Unstaged:-</strong> Files aren't tracked by git yet. his usually indicated a newly created file.</p>
+            <p><strong>Deleted:-</strong> File has been deleted and is waiting to be removed from git.</p>
+    </section>
+        
+        <section>
+            <h1>4. How to add Files in repository</h1>
+            <p><code>git add --all</code> or <code>git add -A</code> or <code>git add -A .</code> Add all files</p>
+            <p><code>git add filename</code> Add a particular file</p>
+            <p><code>git add *.txt</code> Add all the txt files in current directory</p>
+            <p><code>git add docs/*.txt</code> Add all the txt files in docs directory</p>
+            <p><code>git add docs/</code> Add all the files in docs directory</p>
+            
+            <p><code>git add '*.txt'</code> or<code>git add "*.txt"</code> Add all the txt file of whole project</p>
+            
+            <h2>Some important things</h2>
+            <p><code>git add -A</code> or <code>git add --all</code> Stages All</p>
+            <p><code>git add .</code> Stages new & modified, without deleted</p>
+            <p><code>git add -u</code> Stages modified & deleted, without new</p>
+            <p><code>git commit -a</code> It means <code>git add -u</code> and <code>git commit</code></p>
+            <p>Step1:- So after that press <code>i</code> Insert your message
+            </p>
+                <p>
+Step2:- press <code>esc</code> after that press <code>:wq</code>
+            </p>
+        </section>
+    
+    
+    
+</body>
+</html>

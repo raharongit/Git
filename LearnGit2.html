@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn_Git</title>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet1.css">
+    </head>
+    
+<body>
+<h1 id="main_heading">Learn Git</h1>
+    <section>
+        <h1>5. How to reset a file from staging area</h1>
+        <p><code>git reset filename</code></p>
+        <p>To remove a file or files from staging area.</p>
+
+    </section>
+    
+    <section>
+    <h1>6. How to see the history</h1>
+        <p><code>git log</code></p>
+        <p>It remembers all the changes we've committed so far, in the order we committed them.</p>
+    </section>
+    
+    <section>
+        <h1>7. More information of history</h1>
+        <p><code>git log --summary</code></p>
+        <p>To see more information for each commit. We can see where new files were added for the first time OR where files were deleted.</p>
+        <p>It's good overview of what's going on the project.</p>
+
+    </section>
+        
+        <section>
+            <h1>8. Remote Repo</h1>
+            <p>Go to Github website and create a new empty repository.</p>
+            <p>To push our local repository to the Github server, we'll need to add a remote repository.</p>
+            <p><code>git remote add remotename repo_url</code></p>
+            <p>Here remotename is a nickname of this project so generally we call it <span>origin</span> OR it's depend on you whatever you want to call it. Git doesn't care what you name your remotes, but it's typical to name your main one origin.</p>
+            <p>repo_url is the url of your new empty repository on Github.</p>
+        </section>
+    
+    <section>
+        <h1>9. Pushing Remotely</h1>
+        <p><code>git push -u remotename master</code></p>
+        <p>The push command tells git where to put our commits when we're ready.</p>
+        <p>We are pushing our local changes to our repository on Github.</p>
+        <p>Default local branch name is master.</p>
+        <p><span>-u</span> tells git to remember the parameters, so that next time we can simply run <code>git push</code> and git woll know what to do.</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn_Git</title>
+          <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet1.css">
+    </head>
+    
+<body>
+<h1 id="main_heading">Learn Git</h1>
+    <section>
+        <h1>10. Pulling Remotely</h1>
+        <p>Let's pretend some time has passed. We've invited other people to our Github project who've pulled your changes, made their own commits and pushed them.</p>
+        <p>We can check for changes on our Github repository &amp; pull down any new changes by running this command:-</p>
+        <code>git pull remotename master</code>
+
+    </section>
+    
+    <section>
+    <h1>11. How to see the Differences</h1>
+        <code>git diff</code>
+        <p>Run this command before add the file into local repository.</p>
+        <p>It shows unstaged differences.</p>
+        <p>If we want the diff of our most recent commit, which we can refer to using <b>HEAD</b> pointer.</p>
+        <code>git diff HEAD</code>
+        <p><b>HEAD</b> is pointer that holds your position within all your different commits.</p>
+        <p>By default <b>HEAD</b> points to your most recent commit, so it can be used as a quick way to reference that commit without having to look up the SHA.</p>
+        
+  
+    </section>
+    
+    <section>
+        <h1>12. Staged Differences</h1>
+        <p>diff is looking at changes within files that have already been staged.</p>
+        <p>You want to try to keep related changes together in seperate commits.</p>
+        <p>Using <code>git diff</code> gives you a good overview of changes you have made &amp; less you add files or directories one at a time &amp; commit them separately.</p>
+        <code>git diff --staged</code>
+        <p>To see the changes we just staged. (We stages differences)</p>
+ 
+
+    </section>
+        
+        <section>
+            <h1>13. Some Important Things</h1>
+        <p><code>git reset</code> it does the file unstaged but it will not remove it permanently. (We can add it later)</p>
+        <p>Files can be changed back to how they were at last commit by using the command:-</p>
+            <code>git checkout --filename</code>
+            <p>get rid off all the changes since the last commit for a particular file.</p>
+            <p><code>git checkout</code> seems to work fine without it(--).</p>
+            <p>It's simply promising the command line that there are no more option after that(--).</p>
+            <p>This way if you happen to have branch name filename, it will still revert the file, instead of swithching to the branch of same name.</p>
+            <p>Don't worry we'll see it in next topic.</p>
+          
+        </section>
+    
+
+</body>
+</html>
