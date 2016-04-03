@@ -1,3 +1,3 @@
 # LearnGit
 It's a blog to learn git easily.
-#More update will be coming soon.
+#More updates will be coming soon.
