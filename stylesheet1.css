@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
+    background-position: center; 
     font-family: Helvetica sans-serif;
     font-size: 18px;
 }
