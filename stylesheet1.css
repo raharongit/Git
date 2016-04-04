@@ -1,6 +1,30 @@
 body{
     background-color: black;
 }
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left:0px;
+    z-index: 0;
+    height: 60px;
+    background-color:cornflowerblue;
+}
+ul{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 15px 9px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: 59px;
+}
 code{
     border: 0px solid #9DA6B3;
     background-color:grey;
@@ -10,18 +34,24 @@ code{
 }
 
 section{
-    background-color:#cbbeb5;
+    background-color:white;
     color:black;
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
+    word-wrap:break-word;
     position: relative;
-   word-wrap:break-word;
+    z-index: -1; 
 }
 
-#main_heading{
-    color: white;
-    text-align: center;
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#sec{
+     z-index: -1;
+     margin-top: 100px;
 }
 
 span{
