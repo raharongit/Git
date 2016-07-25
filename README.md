@@ -1,2 +1,2 @@
 # LearnGit
-It's a blog to learn git easily for beginners.
+>It'll help to learn Git and GitHub to beginners. 
