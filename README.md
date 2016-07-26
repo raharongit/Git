@@ -3,6 +3,6 @@
 
 >If you want to learn how to use Git & Github follow below steps.
 
-1. [Download Git](https://git-scm.com/downloads)
+1. <a href="https://git-scm.com/downloads">Download Git</a>
 
-2. [Start from here](https://raharongit.github.io/LearnGit/LearnGit1.html)
+2. <a href="https://raharongit.github.io/LearnGit/LearnGit1.html">Start from here</a>
